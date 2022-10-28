@@ -9,14 +9,17 @@
     <!-- icon web -->
     <link rel="icon" href="./Logos-Imágenes/Google.png">
 
-    <!-- font-awesome -->
+    <!-- cdn´s -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <!-- style -->
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <section class="header">
+
+  <div class="content">
+    <section class="profile">
         <div class="content__profile">
             <div class="photo__profile">
               <p class="uiD">
@@ -114,11 +117,15 @@
     </section>
 
     <section class="about">
+      <div class="content-about">
         <h2 class="about__title">
             Acerca de mí
         </h2>
 
         <article>
+            <p class="about__paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure reprehenderit quod asperiores fugiat omnis aspernatur sint quasi doloremque. Nam, maxime rem. Ratione earum modi quod cum dolores sit expedita.
+            </p>
             <p class="about__paragraph">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure reprehenderit quod asperiores fugiat omnis aspernatur sint quasi doloremque. Nam, maxime rem. Ratione earum modi quod cum dolores sit expedita.
             </p>
@@ -128,6 +135,7 @@
             <i class="fa fa-arrow-down icon"></i>
             <a href="#" class="download" download="Yostin CV">Descargar CV</a>
         </div>
+      </div>
     </section>
 
     <section class="studie">
@@ -153,20 +161,20 @@
             </div>
 
             <div class="hability">
-                <img src="../Logos-Imágenes/logo_academlo.png" alt="academlo">
+              <img src="./Logos-Imágenes/logo_academlo.png" alt="academlo">
 
-                <h3 class="hability__subtitle">
-                    Academlo
-                </h3>
+              <h3 class="hability__subtitle">
+                  Academlo
+              </h3>
 
-                <p class="hability__date">
-                    2020 - 2021
-                </p>
+              <p class="hability__date">
+                  2021 - 2022
+              </p>
 
-                <p class="hability__description">
-                    Programador full stack.
-                </p>
-            </div>
+              <p class="hability__description">
+                  Programador web full stack.
+              </p>
+          </div>
         </div>
     </section>
 
@@ -274,15 +282,19 @@
     </section>
 
     <footer>
-        <h2 class="foote-title">Yostin Gutierrez</h2>
+        <div class="content-footer">
+          <h2 class="foote-title">Yostin Gutierrez</h2>
 
-        <p class="footer-paragraph">
-            Hecho con <i class="fa fa-heart"></i> en Academlo. <a href="#"><i class="fab fa-github"></i></a>
-        </p>
+          <p class="footer-paragraph">
+              Hecho con <i class="fa fa-heart"></i> en Academlo. <a href="#"><i class="fab fa-github"></i></a>
+          </p>
+        </div>
     </footer>
+  </div>
 
 
     <!-- scripts -->
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

@@ -41,9 +41,21 @@ section {
     color: var(--secondColor);
 }
 
-.header {
+.profile {
     background-color: var(--primaryColor);
 }
+
+.content {
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+/* ! perfil */
 
 .content__profile {
     display: flex;
@@ -154,7 +166,9 @@ section {
     align-items: center;
     margin: auto;
     padding: 1rem;
-    border-radius: .3rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 5px 5px 5px 0px rgba(179,175,179,1);
     gap: 1rem;
     flex-direction: column;
     background-color: var(--backgroundColorContact);
@@ -180,7 +194,7 @@ section {
 .colaboration .email-contact input {
     width: 90%;
     border: none;
-    padding: .5rem;
+    padding: .5rem 1rem; 
     background-color: var(--backgroundInput);
     font-weight: 400;
     border-radius: 1rem;
@@ -192,7 +206,6 @@ section {
 
 .colaboration .email-contact input::placeholder {
     color: var(--textBodyColor);
-    padding-left: 0.5rem;
 }
 
 .colaboration .email-contact .btn {
@@ -211,7 +224,7 @@ section {
 /* ! Acerca de mi */
 
 .about {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,17 +236,27 @@ section {
     padding: 1rem;
 }
 
-.about .about__title {
-    width: 90%;
+.content-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+}
+
+.content-about .about__title {
     font-size: 2rem;
+    align-self: start;
     color: var(--textBodyColor);
     font-weight: bold;
 }
 
-.about .about__paragraph {
-    width: 90%;
+.content-about .about__paragraph {
     padding: 1rem;
-    text-transform: capitalize;
+    text-align: justify;
+    align-self: flex-start;
     border-left: 3px solid var(--primaryColor);
 }
 
@@ -262,6 +285,12 @@ section {
 
 /* ! estudios */
 
+.studie {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
 .studie .studies__title {
     font-size: 2rem;
     color: var(--textBodyColor);
@@ -269,15 +298,18 @@ section {
 }
 
 .studies__experience {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1.4rem;
+
+    padding: 1rem;
 }
 
 .studies__experience .hability {
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +317,7 @@ section {
     gap: .2rem;
     background-color: var();
 
-    padding: 1rem;
+    padding: 3rem 1rem;
     border-radius: 1.2rem;
     box-shadow: 5px 5px 10px -4px rgba(153,153,153,1);
 }
@@ -356,6 +388,8 @@ section {
     border-radius: 1rem;
     position: relative;
     display: flex;
+
+    background-color: var(--backgroundInput);
 }
 
 .skill .skill__progress span {
@@ -382,7 +416,7 @@ section {
     width: 75%;
 }
 
-/* Experiencias */
+/* ! Experiencias */
 
 .experience {
     width: 100%;
@@ -431,6 +465,10 @@ section {
     font-weight: 600;
 }
 
+.desktop {
+    display: none;
+}
+
 /* ! Contacto */
 
 .contact {
@@ -464,8 +502,8 @@ section {
 }
 
 .contact__img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -490,19 +528,26 @@ section {
 /* ! Footer */
 
 footer {
+    width: 100%;
     text-align: center;
-    padding: 2rem 5rem;
     background-color: var(--primaryColor);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer .foote-title {
     color: var(--textColorButtons);
-    font-size: 3rem;
+    font-size: 1.5rem;
+
+    margin-bottom: 1rem;
 }
 
 footer .footer-paragraph {
     color: var(--textColorButtons);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -512,4 +557,35 @@ footer .footer-paragraph {
 
 .footer-paragraph a {
     color: var(--textColorButtons);
+}
+
+
+/* medias Queris */
+
+@media (min-width: 700px) {
+    .colaboration {
+        width: 80%;
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .studies__experience {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .studies__experience .hability {
+        width: 30%;
+        padding: 1rem 3rem;
+    }
+
+    .skill {
+        width: 70%;
+    }
+
+    .contact__items {
+        gap: 5rem;
+    }
 }
