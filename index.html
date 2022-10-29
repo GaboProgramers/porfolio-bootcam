@@ -19,16 +19,36 @@
 <body>
 
   <div class="content">
-    <section class="profile">
+
+    <section>
+      <nav class="navbar">
+        <a href="#" class="logo">Gabo Programers</a>
+
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hability">Hability</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="fas fa-bars icons"></div>
+      </nav>
+    </section>
+    
+    <section class="profile" id="home">
         <div class="content__profile">
             <div class="photo__profile">
               <p class="uiD">
                 UI Desegner
                 <span class="years">4 años</span>
               </p>
+
               <div class="profile__img">
                 <img src="../Logos-Imágenes/person 2.png" alt="dev" />
               </div>
+
               <p class="tecnology">
                 Frontend Dev
                 <span class="years"> 1 año</span>
@@ -48,7 +68,7 @@
             </div>
         </div>
 
-          <div class="content__socials">
+        <div class="content__socials">
             <div class="social">
               <div class="redes">
                 <svg
@@ -102,7 +122,10 @@
                 </svg>
               </div>
             </div>
-          </div>
+        </div>
+
+        <div class="border-left"></div>
+        <div class="border-right"></div>
     </section>
 
     <section class="colaboration">
@@ -116,7 +139,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="content-about">
         <h2 class="about__title">
             Acerca de mí
@@ -138,7 +161,7 @@
       </div>
     </section>
 
-    <section class="studie">
+    <section class="studie" id="studie">
         <h2 class="studies__title">
             Estudios
         </h2>
@@ -178,7 +201,7 @@
         </div>
     </section>
 
-    <section class="content__skills">
+    <section class="content__skills" id="hability">
         <h2 class="skill__title"> Mis habilidades</h2>
         <div class="skill">
             <div class="skill__range">
@@ -223,7 +246,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <h2 class="exp__title"> Experiencia</h2>
 
         <div class="expe__items">
@@ -249,7 +272,7 @@
 
     <!-- falta mi portafolio -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="contact__title">Contacto</h2>
 
         <div class="contact__items">
@@ -286,7 +309,7 @@
           <h2 class="foote-title">Yostin Gutierrez</h2>
 
           <p class="footer-paragraph">
-              Hecho con <i class="fa fa-heart"></i> en Academlo. <a href="#"><i class="fab fa-github"></i></a>
+              Hecho con <i class="fa fa-heart"></i> en Academlo. <a href="https://github.com/GaboProgramers/porfolio-bootcam" target="_blank"><i class="fab fa-github"></i></a>
           </p>
         </div>
     </footer>
@@ -294,7 +317,7 @@
 
 
     <!-- scripts -->
-    <script src="./main.js"></script>
+    <script src="./src/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
