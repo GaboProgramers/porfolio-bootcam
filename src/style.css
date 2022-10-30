@@ -22,6 +22,16 @@
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--primaryColor);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondColor);
+    border-radius: 10px;
+    border: 3px solid var(--textBodyColor);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
@@ -34,6 +44,7 @@ body {
 section {
     width: 100%;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -63,6 +74,7 @@ ul {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    overflow: hidden;
 }
 
 .arrow {
@@ -129,6 +141,7 @@ ul {
     height: 50px;
     padding: 2rem 2rem;
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 2000;
@@ -970,7 +983,7 @@ footer .footer-paragraph {
 
 /* @media (min-width: 900px) */
 
-@media (min-width: 880px) {
+@media (min-width: 800px) {
 
     .icons {
         display: none;

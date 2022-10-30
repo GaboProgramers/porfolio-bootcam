@@ -7,11 +7,12 @@
     <title>Porfolio - Yostin</title>
 
     <!-- icon web -->
-    <link rel="icon" href="./Logos-Imágenes/react.png">
+    <link rel="icon" type="img/png" href="./Logos-Imágenes/JavaScript.png">
 
     <!-- cdn´s -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- style -->
     <link rel="stylesheet" href="./src/style.css">
@@ -48,7 +49,7 @@
     </section>
     
     <section class="profile" id="home">
-        <div class="content__profile">
+        <div class="content__profile"  data-aos="fade-right">
             <div class="photo__profile">
               <p class="uiD">
                 UI Desegner
@@ -79,7 +80,7 @@
             </div>
         </div>
 
-        <div class="content__socials">
+        <div class="content__socials" data-aos="fade-left">
             <div class="social">
               <div class="redes">
                 <svg
@@ -139,7 +140,7 @@
         <div class="border-right"></div>
     </section>
 
-    <section class="colaboration">
+    <section class="colaboration" data-aos="flip-up">
         <h3 class="question">
             ¿Te gustaria que colaboraramos juntos creando proyectos increibles?
         </h3>
@@ -150,7 +151,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="zoom-in-right">
       <div class="content-about">
         <h2 class="about__title subTitle">
             Acerca de mí
@@ -178,7 +179,7 @@
       </div>
     </section>
 
-    <section class="studie" id="studie">
+    <section class="studie" id="studie" data-aos="zoom-in-left">
         <h2 class="studies__title subTitle">
             Estudios
         </h2>
@@ -218,7 +219,7 @@
         </div>
     </section>
 
-    <section class="content__skills" id="hability">
+    <section class="content__skills" id="hability" data-aos="zoom-out">
         <h2 class="skill__title subTitle"> Mis habilidades</h2>
         <div class="skill">
             <div class="skill__range">
@@ -263,7 +264,7 @@
         </div>
     </section>
 
-    <section class="experience" id="experience">
+    <section class="experience" id="experience" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="exp__title subTitle"> Experiencia</h2>
 
         <!-- Slider main container -->
@@ -367,7 +368,9 @@
         </div>
     </section>
 
-    <section class="porfolio" id="porfolio">
+    <section class="porfolio" id="porfolio" data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <h2 class="porfolio__sub-title subTitle"> Mi porfolio</h2>
 
       <div class="porfolio__cards">
@@ -378,7 +381,9 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <h2 class="contact__title subTitle">Contacto</h2>
 
         <div class="contact__items">
@@ -424,7 +429,14 @@
 
     <!-- scripts -->
     <script src="./src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    </script>
     <script>
       const swiper = new Swiper('.swiper-hero', {
         // Optional parameters
