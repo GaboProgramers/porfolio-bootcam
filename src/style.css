@@ -148,8 +148,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ ul {
     position: relative;
     width: 90%;
     height: 0.3rem;
-    background-color: var(--secondColor);
+    background-color: var(--textColorButtons);
     border-radius: 5px;
     transition: background .5s, top .5s, transform .5s;
 }
