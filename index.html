@@ -29,11 +29,13 @@
           <li><a href="#about">About</a></li>
           <li><a href="#hability">Hability</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#">Porfolio</a></li>
+          <li><a href="#porfolio">Porfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="fas fa-bars icons"></div>
+        <div class="bars" id="bars">
+          <div class="bars__line"></div>
+        </div>
       </nav>
     </section>
     
@@ -46,7 +48,8 @@
               </p>
 
               <div class="profile__img">
-                <img src="../Logos-Imágenes/person 2.png" alt="dev" />
+                <img src="./Logos-Imágenes/yostin-mobile.jpg" alt="yostin" class="mobile"/>
+                <img src="./Logos-Imágenes/yostin-desktop.jpg" alt="yostin" class="desktop"/>
               </div>
 
               <p class="tecnology">
@@ -130,7 +133,7 @@
 
     <section class="colaboration">
         <h3 class="question">
-            ¿ Te gustaria colaborar juntos creando productos increibles?
+            ¿Te gustaria que colaboraramos juntos creando proyectos increibles?
         </h3>
         
         <div class="email-contact">
@@ -147,10 +150,16 @@
 
         <article>
             <p class="about__paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure reprehenderit quod asperiores fugiat omnis aspernatur sint quasi doloremque. Nam, maxime rem. Ratione earum modi quod cum dolores sit expedita.
+                Mi nombre es <b>Yostin Gutierrez</b> soy amante a la programacion y desarrollo codigo
+                desde hace <strong>1 año</strong>
             </p>
             <p class="about__paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure reprehenderit quod asperiores fugiat omnis aspernatur sint quasi doloremque. Nam, maxime rem. Ratione earum modi quod cum dolores sit expedita.
+                Hace poco tiempo comence con un <b>bootcam</b> en <strong>Academlo</strong>
+                con el cual eh desarrollado habilidades muy buenas en el ambito de la programacion
+                y el desarrollo web..!! <br><br>
+                En el siguiente link podras encontrar y descargar mi <b>CV</b><i class="fa fa-arrow-down arrow"></i>
+
+
             </p>
         </article>
 
@@ -249,28 +258,93 @@
     <section class="experience" id="experience">
         <h2 class="exp__title"> Experiencia</h2>
 
-        <div class="expe__items">
-          <i class="fas fa-chevron-left fa-icon"></i>
-          <div class="expe__item">
-            <img src="../Logos-Imágenes/Wizeline.png" alt="Wizeline">
-            <p class="item__subtitle">
-              Interactive Desing
-            </p>
-            <span class="year">1 año</span>
-          </div>
+        <!-- Slider main container -->
+        <div class="swiper swiper-hero">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/Google.png" alt="google">
+                <p class="slide-title">
+                  interactive desing
+                </p>
+                <p class="slide-time">
+                  1 año
+                </p>
+              </div>
+            </div>
 
-          <div class="expe__item">
-            <img src="../Logos-Imágenes/Wizeline.png" alt="Wizeline">
-            <p class="item__subtitle">
-              Interactive Desing
-            </p>
-            <span class="year">1 año</span>
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/Hootsuite.png" alt="Hootsuite">
+                <p class="slide-title">
+                  product desingner
+                </p>
+                <p class="slide-time">
+                  1 año
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/Tec.png" alt="tec">
+                <p class="slide-title">
+                  UX Enginer
+                </p>
+                <p class="slide-time">
+                  6 meses
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/Wizeline.png" alt="wizeline">
+                <p class="slide-title">
+                  UI desingner
+                </p>
+                <p class="slide-time">
+                  6 meses
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/logo_academlo.png" alt="Academlo">
+                <p class="slide-title">
+                  Estudiante
+                </p>
+                <p class="slide-time">
+                  1 año
+                </p>
+              </div>
+            </div>
           </div>
-          <i class="fas fa-chevron-right fa-icon"></i>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </section>
 
-    <!-- falta mi portafolio -->
+    <section class="porfolio" id="porfolio">
+      <h2 class="porfolio__sub-title"> Mi porfolio</h2>
+
+      <div class="porfolio__cards">
+        <img src="./Logos-Imágenes/Ejemplo2.png" alt="tools">
+        <img src="./Logos-Imágenes/Ejemplo 1.png" alt="app">
+        <img src="./Logos-Imágenes/Ejemplo 4.png" alt="multiApp">
+        <img src="./Logos-Imágenes/Ejemplo 3.png" alt="dashboard">
+      </div>
+    </section>
 
     <section class="contact" id="contact">
         <h2 class="contact__title">Contacto</h2>
@@ -319,5 +393,50 @@
     <!-- scripts -->
     <script src="./src/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-hero', {
+        // Optional parameters
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        breakpoints: {
+          400: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          },
+
+          550: {
+            slidesPerView: 3,
+            slidesPerGroup: 1
+          },
+
+          700: {
+            slidesPerView: 5,
+            slidesPerGroup: 1
+          }
+        },
+        direction: 'horizontal',
+        loop: true,
+        disableOnInteraction: false,
+    
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    
+        // And if we need scrollbar
+        /* scrollbar: {
+        el: '.swiper-scrollbar',
+        }, */
+
+        //
+    });
+    </script>
 </body>
 </html>
