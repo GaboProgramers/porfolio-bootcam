@@ -682,14 +682,15 @@ ul {
 
 .swiper-hero .swiper-button-prev,
 .swiper-hero .swiper-button-next {
-    width: 40px;
+    /* width: 40px;
     height: 40px;
     margin-top: -20px;
     border-radius: 50%;
     background-color: var(--secondColor);
     color: var(--textColorButtons);
     font-weight: 600;
-    --swiper-navigation-size: 20px;
+    --swiper-navigation-size: 20px; */
+    display: none;
 }
 
 .swiper-hero .swiper-pagination {
