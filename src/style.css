@@ -79,8 +79,9 @@ ul {
     background-color: var(--primaryColor);
     width: 46px;
     height: 46px;
-    color: #000;
+    color: var(--textColorButtons);
     text-align: center;
+    border: 2px solid var(--secondColor);
     border-radius: 50%;
     transition: all .2s;
 }
@@ -92,8 +93,8 @@ ul {
 
 #ir-arriba i {
     position: absolute;
-    top: 12px;
-    left: 10px;
+    top: 11px;
+    left: 8px;
     font-size: 25px;
 }
 
@@ -529,6 +530,7 @@ ul {
 }
 
 .content__download .download {
+    font-family: 'Roboto Mono', monospace;
     font-weight: 600;
 }
 
@@ -586,7 +588,7 @@ ul {
 }
 
 .hability .hability__subtitle {
-    width: 80%;
+    width: 70%;
     text-align: center;
     font-weight: 600;
     color: var(--textBodyColor);
@@ -729,21 +731,33 @@ ul {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    gap: 1rem;
 
     background-color: var(--backgroundContentColor);
 }
 
+.slide-card .slide-title {
+    font-size: 1.5rem;
+    color: var(--textBodyColor);
+    font-weight: 600;
+}
+
+.slide-card .slide-time {
+    font-size: 1.2rem;
+    color: var(--secondColor);
+    font-weight: bold;
+}
+
 .swiper-hero .swiper-button-prev,
 .swiper-hero .swiper-button-next {
-    /* width: 40px;
+    width: 40px;
     height: 40px;
     margin-top: -20px;
     border-radius: 50%;
     background-color: var(--secondColor);
     color: var(--textColorButtons);
     font-weight: 600;
-    --swiper-navigation-size: 20px; */
-    display: none;
+    --swiper-navigation-size: 20px;
 }
 
 .swiper-hero .swiper-pagination {
@@ -926,6 +940,7 @@ footer .foote-title {
 }
 
 footer .footer-paragraph {
+    font-family: 'Roboto Mono', monospace;
     color: var(--textColorButtons);
     font-size: 1.1rem;
     font-weight: 400;
@@ -939,10 +954,24 @@ footer .footer-paragraph {
     color: var(--textColorButtons);
 }
 
+/* class subTitles */
+
+.about .subTitle,
+.studie .subTitle,
+.content__skills .subTitle,
+.experience .subTitle,
+.porfolio .subTitle,
+.contact .subTitle {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
 
 /* medias Queris */
 
-@media (min-width: 700px) {
+/* @media (min-width: 900px) */
+
+@media (min-width: 880px) {
+
     .icons {
         display: none;
     }
@@ -952,6 +981,7 @@ footer .footer-paragraph {
         width: auto;
         height: auto;
         flex-direction: row ;
+        gap: 0.1rem;
         transform: translateX(0);
     }
 
@@ -1042,11 +1072,11 @@ footer .footer-paragraph {
 
     .studies__experience {
         flex-direction: row;
-        gap: .5rem;
+        gap: 4rem;
     }
 
     .studies__experience .hability {
-        width: 30%;
+        width: 20%;
         padding: 1rem 3rem;
     }
 

@@ -7,7 +7,7 @@
     <title>Porfolio - Yostin</title>
 
     <!-- icon web -->
-    <link rel="icon" href="./Logos-Imágenes/yostin-mobile.jpg">
+    <link rel="icon" href="./Logos-Imágenes/react.png">
 
     <!-- cdn´s -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -152,7 +152,7 @@
 
     <section class="about" id="about">
       <div class="content-about">
-        <h2 class="about__title">
+        <h2 class="about__title subTitle">
             Acerca de mí
         </h2>
 
@@ -179,7 +179,7 @@
     </section>
 
     <section class="studie" id="studie">
-        <h2 class="studies__title">
+        <h2 class="studies__title subTitle">
             Estudios
         </h2>
 
@@ -219,7 +219,7 @@
     </section>
 
     <section class="content__skills" id="hability">
-        <h2 class="skill__title"> Mis habilidades</h2>
+        <h2 class="skill__title subTitle"> Mis habilidades</h2>
         <div class="skill">
             <div class="skill__range">
                 <p class="skill__subtitle">
@@ -264,7 +264,7 @@
     </section>
 
     <section class="experience" id="experience">
-        <h2 class="exp__title"> Experiencia</h2>
+        <h2 class="exp__title subTitle"> Experiencia</h2>
 
         <!-- Slider main container -->
         <div class="swiper swiper-hero">
@@ -273,9 +273,9 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="slide-card">
-                <img src="./Logos-Imágenes/Google.png" alt="google">
+                <img src="./Logos-Imágenes/html-grande.png" alt="html">
                 <p class="slide-title">
-                  interactive desing
+                  HTML
                 </p>
                 <p class="slide-time">
                   1 año
@@ -285,48 +285,72 @@
 
             <div class="swiper-slide">
               <div class="slide-card">
-                <img src="./Logos-Imágenes/Hootsuite.png" alt="Hootsuite">
+                <img src="./Logos-Imágenes/css.png" alt="css">
                 <p class="slide-title">
-                  product desingner
+                  Css
                 </p>
                 <p class="slide-time">
-                  1 año
+                  1 Año
                 </p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="slide-card">
-                <img src="./Logos-Imágenes/Tec.png" alt="tec">
+                <img src="./Logos-Imágenes/JavaScript.png" alt="JavaScript">
                 <p class="slide-title">
-                  UX Enginer
+                  JavaScript
                 </p>
                 <p class="slide-time">
-                  6 meses
+                  1 Año
                 </p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="slide-card">
-                <img src="./Logos-Imágenes/Wizeline.png" alt="wizeline">
+                <img src="./Logos-Imágenes/json.png" alt="json">
                 <p class="slide-title">
-                  UI desingner
+                  JSON - Js
                 </p>
                 <p class="slide-time">
-                  6 meses
+                  7 Meses
                 </p>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="slide-card">
-                <img src="./Logos-Imágenes/logo_academlo.png" alt="Academlo">
+                <img src="./Logos-Imágenes/sass.png" alt="sass">
                 <p class="slide-title">
-                  Estudiante
+                  Sass - css
                 </p>
                 <p class="slide-time">
-                  1 año
+                  4 Meses
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/tailwind-css.png" alt="tailwindcss">
+                <p class="slide-title">
+                  tailwind - css
+                </p>
+                <p class="slide-time">
+                  4 Meses
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-card">
+                <img src="./Logos-Imágenes/react.png" alt="react">
+                <p class="slide-title">
+                  React
+                </p>
+                <p class="slide-time">
+                  1 mes
                 </p>
               </div>
             </div>
@@ -344,7 +368,7 @@
     </section>
 
     <section class="porfolio" id="porfolio">
-      <h2 class="porfolio__sub-title"> Mi porfolio</h2>
+      <h2 class="porfolio__sub-title subTitle"> Mi porfolio</h2>
 
       <div class="porfolio__cards">
         <img src="./Logos-Imágenes/Ejemplo2.png" alt="tools">
@@ -355,7 +379,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="contact__title">Contacto</h2>
+        <h2 class="contact__title subTitle">Contacto</h2>
 
         <div class="contact__items">
             <div class="contact__item">
@@ -420,7 +444,11 @@
           700: {
             slidesPerView: 5,
             slidesPerGroup: 1
+            
           }
+        },
+        autoplay: {
+              delay: 7000
         },
         direction: 'horizontal',
         loop: true,
