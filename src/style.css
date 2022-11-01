@@ -86,8 +86,8 @@ ul {
 #ir-arriba {
     position: fixed;
     z-index: 1000;
-    right: 30px;
-    bottom: 25px;
+    right: 20px;
+    bottom: 60px;
     background-color: var(--primaryColor);
     width: 46px;
     height: 46px;
@@ -965,6 +965,10 @@ footer .footer-paragraph {
 
 .footer-paragraph a {
     color: var(--textColorButtons);
+}
+
+.footer-paragraph .fa-github {
+    font-size: 1.5rem;
 }
 
 /* class subTitles */
